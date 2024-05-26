@@ -1,0 +1,115 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  .footer_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .get {
+      display: flex;
+      align-items: center;
+      border: 0;
+      outline: 0;
+      padding: 8px;
+      background-color: #ccc;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      color: black;
+      font-family: Roboto;
+      margin-bottom: 16px;
+    }
+    p {
+      display: flex;
+      width: 496px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: 400;
+      color: #4b5563;
+    }
+    .media {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 48px;
+      h1{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #4b5563;
+      }
+    }
+    .media2 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h1 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #4b5563;
+      }
+    }
+  }
+  .footer_b {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    .footer_content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .get {
+        display: flex;
+        align-items: center;
+        border: 0;
+        outline: 0;
+        padding: 8px;
+        background-color: #ccc;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        color: black;
+        font-family: Roboto;
+        margin-bottom: 16px;
+      }
+      p {
+        display: flex;
+        width: 306px;
+        text-align: center;
+        line-height: 28px;
+        font-weight: 400;
+        color: #4b5563;
+      }
+      .media {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 48px;
+      }
+      .media2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #4b5563;
+        }
+      }
+    }
+    .footer_b {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+}
