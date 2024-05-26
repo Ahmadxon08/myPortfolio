@@ -24,24 +24,23 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      
 
       .navList {
         display: flex;
         align-items: center;
-        justify-content: end;
+      
         padding: 0;
-        gap: 20px;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
         a {
           font-weight: 600;
           font-size: 16px;
           font-family: Roboto;
-          transition: all 0.3s;
-          color: white;
+          transition: all .3s;
         }
-        a:active {
-          color: #8f1919 !important;
+        a:active{
+          color: red !important;
         }
       }
       .navList.open {
