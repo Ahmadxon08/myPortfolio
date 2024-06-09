@@ -100,11 +100,15 @@
           padding-top: 100px;
           padding-bottom: 30px;
           min-height: 100vh;
-          transform: translateX(-100%);
-          transition: transform 0.3s ease-in-out;
-          background-color: lianer-gradient(
-            from top to bottom rgba(18, 8, 124, 0.9)
+          transform: translateX(-100%) !important;
+          transition: transform 3s ease-in-out;
+          background: linear-gradient(
+            to bottom,
+            hsl(245, 88%, 13%),
+            hsla(245, 88%,18%),
+            hsla(245, 88%, 22%)
           );
+
           a {
             font-weight: 700;
             font-size: 26px;
@@ -114,7 +118,7 @@
         }
         .navList.open {
           display: flex;
-          transform: translateX(0);
+          transform: translateX(0) !important;
 
           a {
             font-weight: 600;
