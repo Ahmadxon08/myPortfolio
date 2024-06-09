@@ -30,7 +30,6 @@
         align-items: center;
         padding: 0;
         gap: 50px;
-        background-image: url("./assets/img/bg2.jpg") !important;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
         a {
@@ -103,10 +102,9 @@
           min-height: 100vh;
           transform: translateX(-100%);
           transition: transform 0.3s ease-in-out;
-          background-image: url("./assets/img/bg2.jpg") !important;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
+          background-color: lianer-gradient(
+            from top to bottom rgba(18, 8, 124, 0.9)
+          );
           a {
             font-weight: 700;
             font-size: 26px;
