@@ -29,21 +29,29 @@ const Header = (props) => {
     <div className="header">
       <div className="container">
         <div className="header_inner">
-          <HashLink  smooth to="/#home" className="logo">
-          <IoLogoAngular color="white" size={42} />
+          <HashLink smooth to="/#home" className="logo">
+            <IoLogoAngular color="white" size={42} />
           </HashLink>
           <nav>
             <div ref={navRef} className={`navList ${isMenuOpen ? "open" : ""}`}>
-              <HashLink onClick={closeMenu} smooth to="/#about">About</HashLink>
-              <HashLink  onClick={closeMenu} smooth to="/#skill">Skills</HashLink>
-              <HashLink  onClick={closeMenu}   smooth to="/#work">Work</HashLink>
-              <HashLink  onClick={closeMenu}  smooth to="/#contact">Contact</HashLink>
+              <HashLink onClick={closeMenu} smooth to="/#about">
+                About
+              </HashLink>
+              <HashLink onClick={closeMenu} smooth to="/#skill">
+                Skills
+              </HashLink>
+              <HashLink onClick={closeMenu} smooth to="/#work">
+                Work
+              </HashLink>
+              <HashLink onClick={closeMenu} smooth to="/#contact">
+                Contact
+              </HashLink>
             </div>
             <button className="darkMode" onClick={toggleDark}>
               {isDark ? (
-                <IoSunnyOutline size={28} color="white" />
-              ) : (
                 <FaMoon size={28} color="black" />
+              ) : (
+                <IoSunnyOutline size={28} color="white" />
               )}
             </button>
             <button onClick={toggle} className="menu">
