@@ -25,7 +25,6 @@ const App = () => {
       <Header handleClick={handleClick} />
       <Routes>
         <Route path="/" element={<Hero isDark={isDark} />} />
-        
       </Routes>
       <Footer />
     </div>

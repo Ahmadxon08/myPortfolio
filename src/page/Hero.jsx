@@ -12,6 +12,7 @@ const figma = "./assets/img/icon-figma.svg";
 const spoty = "./assets/img/spoty.png";
 const crypto = "./assets/img/crypto.png";
 const shop = "./assets/img/shop.png";
+const me = "./assets/img/mm.jpg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import "./Hero.scss";
 const Hero = ({ isDark }) => {
@@ -49,25 +50,13 @@ const Hero = ({ isDark }) => {
           </div>
           <div className="about_content">
             <div className="about_left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              laudantium dolores aut qui iure alias molestiae reprehenderit
-              quos! Cum voluptatibus ex totam sed dicta voluptates velit? Quas,
-              eligendi repellendus ipsum, qui ducimus fugiat molestias odio modi
-              ea inventore alias perferendis nulla neque! Beatae accusamus
-              quisquam, asperiores omnis dolore sequi corrupti eaque
-              reprehenderit magnam provident, commodi obcaecati odio aspernatur.
-              Provident odio, consectetur, quos laboriosam suscipit culpa
-              ratione voluptatem voluptate sint magni delectus. Quasi,
-              repudiandae ducimus iure itaque dolor qui earum nostrum soluta
-              odit eius quaerat officiis minima. Accusantium assumenda quis
-              odit, veritatis ratione repudiandae, consequatur perferendis
-              debitis, omnis ad distinctio explicabo.
+              <img src={me} alt="this is my photo" />
             </div>
             <div className="about_right">
               <h1>Curious about me? Here you have it:</h1>
               <p>
                 I'm a passionate, self-proclaimed designer who specializes in
-                full stack development (React.js ). I am very enthusiastic about
+                front end development (React.js ). I am very enthusiastic about
                 bringing the technical and visual aspects of digital products to
                 life. User experience, pixel perfect design, and writing clear,
                 readable, highly performant code matters to me.
@@ -84,10 +73,6 @@ const Hero = ({ isDark }) => {
               <p>
                 I am very much a progressive thinker and enjoy working on
                 products end to end, from ideation all the way to development.
-              </p>
-              <p>
-                One last thing, I'm available for freelance work, so feel free
-                to reach out and say hello! I promise I don't bite 😉
               </p>
             </div>
           </div>
@@ -139,7 +124,7 @@ const Hero = ({ isDark }) => {
           </div>
         </div>
       </section>
-      <section className="work">
+      <section className="work" id="work">
         <div className="container">
           <div className="work_head">
             <span>Work</span>

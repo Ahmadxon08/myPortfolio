@@ -3,7 +3,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contact">
       <div className="container">
         <div className="footer_content">
           <button className="get">Get in touch</button>
@@ -14,14 +14,12 @@ const Footer = () => {
           <div className="media">
             <h1>ahmadxonmoydinov@gmail.com</h1>
             <h1>+998911525859</h1>
+            <h1>+998944995759</h1>
           </div>
           <div className="media2">
             <h1>You may also find me on these platforms!</h1>
           </div>
         </div>
-      </div>
-      <div className="footer_b">
-        <span>2023 | Designed and coded with ❤️️ by Sagar Shah</span>
       </div>
     </footer>
   );

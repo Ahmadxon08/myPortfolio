@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-import { NavLink } from "react-router-dom";
 import "./Header.scss";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useRef, useState } from "react";
 import { IoLogoAngular, IoMdClose } from "react-icons/io";
 import { IoSunnyOutline } from "react-icons/io5";
 import { FaMoon } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 const Header = (props) => {
   const { handleClick } = props;
   const navRef = useRef();
@@ -16,6 +16,10 @@ const Header = (props) => {
     setIsMenuOpen(!isMenuOpen);
     navRef.current.classList.toggle("open");
   };
+  const closeMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    navRef.current.classList.remove("open");
+  };
   const toggleDark = () => {
     setIsDark(!isDark);
     handleClick();
@@ -25,15 +29,15 @@ const Header = (props) => {
     <div className="header">
       <div className="container">
         <div className="header_inner">
-          <div className="logo">
+          <HashLink  smooth to="/#home" className="logo">
           <IoLogoAngular color="white" size={42} />
-          </div>
+          </HashLink>
           <nav>
             <div ref={navRef} className={`navList ${isMenuOpen ? "open" : ""}`}>
-              <NavLink to="#about">About</NavLink>
-              <NavLink to="#skill">Skills</NavLink>
-              <NavLink to="#contact">Work</NavLink>
-              <NavLink to="#contact">Contact</NavLink>
+              <HashLink onClick={closeMenu} smooth to="/#about">About</HashLink>
+              <HashLink  onClick={closeMenu} smooth to="/#skill">Skills</HashLink>
+              <HashLink  onClick={closeMenu}   smooth to="/#work">Work</HashLink>
+              <HashLink  onClick={closeMenu}  smooth to="/#contact">Contact</HashLink>
             </div>
             <button className="darkMode" onClick={toggleDark}>
               {isDark ? (
